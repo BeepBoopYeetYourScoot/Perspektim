@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Property</title>
+</head>
+<body>
+<div>
+    <h3>Загрузите файл для закрепления за ним прав</h3>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Отправить">
+    </form>
+</div>
+
+{% include 'created_data.html' %}
+
+{% include 'previous_result.html' %}
+
+</body>
+</html>

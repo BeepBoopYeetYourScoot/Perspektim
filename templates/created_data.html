@@ -1,0 +1,8 @@
+{% if created_data %}
+    <div>
+        <h3>Результат</h3>
+        <p>Автор: {{ created_data.author }}</p>
+        <p>Чек-сумма: {{ created_data.hash_sum }}</p>
+        <p>Отметка времени: {{ created_data.timestamp }}</p>
+    </div>
+{% endif %}
